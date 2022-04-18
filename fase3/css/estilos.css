@@ -1,25 +1,74 @@
 body{
-    background-color: #FDEBF7;
+    background-color: white;
     font-family: sans-serif;
 }
 header{
-    background-color: #FBCAFF;
-    text-align: center;
-    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: #EFFFFD;
+    color: black;
+    padding: 20px;
 }
-nav{
-    background-color: #FFADF0;
-    color: white;
-}
+
 section{
-    background-color: #FFADF0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: justify;
 }
 article{
     grid-column: 1/4;
+    padding: 15px;    
 }
 aside{
-    background-color: #FC28FB;
+    background-color: #42C2FF;
     grid-column: 4/5;
+    padding: 30px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+ul, ol{
+    list-style: none;
+    display: inline-block;
+}
+.menu{    
+    padding: 0px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;   
+}
+.menu>li{
+    float: left;    
+}
+.menu li a{
+    background-color: #85F4FF;
+    color: #42C2FF;
+    text-decoration: none;
+    padding: 20px 80px;
+    display: block;
+}
+.menu li a:hover{
+    background-color: #EFFFFD;
+}
+.menu li ul{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    min-width: 140px;    
+}
+.menu li:hover > ul{
+    display: block;
+}
+.menu li ul li{
+    position: relative;
+}
+.menu li ul li ul{
+    right: 140px;
 }
