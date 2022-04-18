@@ -6,10 +6,12 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: #EFFFFD;
-    color: black;
+    color: #42C2FF;
     padding: 20px;
 }
-
+h2{
+    color: #42C2FF;
+}
 section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -20,12 +22,12 @@ article{
     padding: 15px;    
 }
 aside{
-    background-color: #42C2FF;
+    background-color: #EFFFFD;
     grid-column: 4/5;
     padding: 30px;
 }
 footer{
-    background-color: black;
+    background-color: #42C2FF;
     color: white;
     text-align: center;
 }
@@ -71,4 +73,7 @@ ul, ol{
 }
 .menu li ul li ul{
     right: 140px;
+}
+.contenidoAutor{
+    text-align: center;
 }
