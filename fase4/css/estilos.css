@@ -1,7 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-color: white;
     font-family: sans-serif;
 }
+
+@media only screen and (max-width: 1200px) {
+    .estudiar{
+        display: none;        
+    }    
+}
+
+@media only screen and (max-width: 768px) {
+    .titulo{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+
 header{
     display: flex;
     justify-content: space-between;
@@ -30,6 +49,20 @@ footer{
     background-color: #42C2FF;
     color: white;
     text-align: center;
+}
+.logoFooter{
+    padding: 1rem;
+}
+.whatsapp{
+    padding: 1rem;
+}
+
+.facebook{
+    padding: 1rem;
+}
+
+.instagram{
+    padding: 1rem;
 }
 
 ul, ol{
